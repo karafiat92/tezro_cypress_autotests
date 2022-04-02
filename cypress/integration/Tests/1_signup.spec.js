@@ -47,7 +47,7 @@ describe("Tezro sign up", () => {
         .not("#modalSeedPhrase")
         .then(function ($elem) {
           cy.readFile(
-            "C:/Users/Karafiat/Desktop/autotests_cypress/AUTOTESTS/cypress/downloads/seedPhrase.txt"
+            'cypress/downloads/seedPhrase.txt'
           ).should("eq", $elem.text());
         });
 
