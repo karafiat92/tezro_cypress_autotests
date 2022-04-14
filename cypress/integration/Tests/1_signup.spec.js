@@ -52,7 +52,7 @@ describe("Tezro sign up", () => {
       cy.get(".StyledSeedPhraseModal_s1m6gcfy")
         .find(">p") //.children('.StyledSeedPhrase_s1j9bvp0 StyleText_svkxk8i')
         .not("#modalSeedPhrase")
-        .then(function ($elem) {
+        .then( ($elem) => { // function ($elem){}
           cy.readFile("cypress/downloads/seedPhrase.txt").should(
             "eq",
             $elem.text()
