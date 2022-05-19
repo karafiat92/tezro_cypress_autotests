@@ -20,6 +20,14 @@ let tezroData;
             phone: "222333445_" // не полный номер телефона
         },
     ]
+
+    const userGlobalSearch = {
+            usernameWithDog: "@fashy5",
+            username:"fashy5",
+            firstname: "Fashio", 
+            lastname: "sTudenT",
+            message: ""
+    }
     // данные по кошелькам
     const cryptoData = [
         {
@@ -390,5 +398,6 @@ export default tezroData = {
     urls,
     user,
     userLoginData, 
-    userSignUpData
+    userSignUpData,
+    userGlobalSearch
  }
